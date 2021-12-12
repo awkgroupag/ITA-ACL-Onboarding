@@ -19,8 +19,8 @@ Choose 1 or 2 applications of your interest and read the documentation carefully
 
 ## Finish
 
-Go to next part [Part 4: Do your own pet project](part-4-pet-project\main.md)
+Next part: [Part 4: Do your own pet project](../part-4-pet-project/main.md)
 
-Back to [Part 2: Introduction to Use Cases](part-2-use-cases\main.md)
+Back to [Part 2: Introduction to Use Cases](../part-2-use-cases/main.md)
 
-Back to [overview page](main.md)
+Back to [overview page](../main.md)

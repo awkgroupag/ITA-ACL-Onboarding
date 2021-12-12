@@ -43,8 +43,8 @@ Choose 2-4 of these topics:
 
 ## Finish
 
-Go to next part [Part 3: Get to know ACL application landscape](part-3-awk-applications\main.md)
+Next part: [Part 3: Get to know ACL application landscape](../part-3-awk-applications/main.md)
 
-Back to [Part 1: First steps in Azure](part-1-sandbox\main.md)
+Back to [Part 1: First steps in Azure](../part-1-sandbox/main.md)
 
-Back to [overview page](main.md)
+Back to [overview page](../main.md)

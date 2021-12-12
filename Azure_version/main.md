@@ -2,7 +2,7 @@
 
 Version: X.X
 
-Stand: 28.11.2021
+Stand: 12.12.2021
 
 Main Contact: Lukas Möller (@awk-moeller, lukas.moeller@awk.ch)
 
@@ -29,7 +29,7 @@ During this course you will extend your technical competences and get hands-on e
 * Cloud platform services like VMs, storage etc (Azure)
 
 The course is outlined for a duration ranging from 12 to 20 hours depending on your pre-knowledge and the time you want to invest in doing your pet project.
-The hours can be reported on 1230-Weiterbildung for the course work itself and 1304-Knowledge Development for doing the pet project.
+The hours can be reported on **1230 - Weiterbildung** for the course work itself and **1304 - Knowledge Development** for doing the pet project.
 
 ### Prerequisites
 
@@ -39,7 +39,7 @@ An understanding of basic cloud concepts is necessary to pursue this course. You
 
 ## Learning Path
 
-1. [Part 0: Theoretical Basis](\part-0-theory/main.md) (Pre-Requisites)
+1. [Part 0: Theoretical Basis](part-0-theory/main.md) (Pre-Requisites)
 2. [Part 1: First steps in Azure](part-1-sandbox/main.md) (Included in AZ-900)
 3. [Level-Up: Become an ACL Trainee](TODO)
 4. [Part 2: Introduction to Use Cases](part-2-use-cases/main.md) (Title TODO)
