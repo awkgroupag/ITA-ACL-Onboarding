@@ -1,31 +1,39 @@
 # Part 2: Introduction to Use Cases (Title TODO)
 
-Goals:
+## What will you achieve in this part
 
 * Development environment is ready to use
-* Try out ressource deployments of use cases most commonly inside ACL
+* Try out ressource deployments of use cases most commonly used inside ACL
 * Make decisions about sizing, scaling and type of ressource
 * Know where to look for further knowledge and whom to ask
 
-## Basic GitHub Knowledge
+## Learning Path
 
-Do you have experience in version control for code? Do you know what a code repository, commit, issue and merge request is?
+### Basic GitHub Knowledge
+
+Do you have experience in modern version control for code? Do you know what git repository, commit, branch, merge request and issue are?
 
 * Yes  --> Skip this section.
 * No --> Check this [course](https://lab.github.com/githubtraining/introduction-to-github) out.
 * I am not sure --> The above course takes less than 1 hour
 
-## Setup development environment
+### Setup development environment
 
+VSC default (our support)
+Jump host idea (pay as you go)
 Follow these [Instructions](https://docs.microsoft.com/en-us/learn/modules/prepare-your-dev-environment-for-azure-development/)
 
-## Mandatory Services
+### Mandatory Services to go through
+
+Look into all of these topics:
 
 * Azure Functions
 * Networking (Virtual Networks)
 * TODO
 
-## Optional Services (Choose 2-4)
+### Optional Services to go through
+
+Choose 2-4 of these topics:
 
 * Azure Web App (Advanced)
 * Azure Tenant Governance (Expert)

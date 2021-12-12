@@ -12,6 +12,6 @@
 
 ## Finish
 
-Go to next part [Part 1: First steps in Azure](part-1-sandbox\main.md)
+Go to next part [Part 1: First steps in Azure](../part-1-sandbox/main.md)
 
-Back to [overview page](main.md)
+Back to [overview page](../main.md)

@@ -3,9 +3,13 @@
 Description:
 [Put a short description here, how or what for the service/ressource can be used.]
 
+Why is it relevant?
+
+
 ## Fact Sheet
 
 [Insert fact sheet of Joel]
+--> You are here (Einordnung auf Shichctenmodell)
 
 ## Learning Path
 
