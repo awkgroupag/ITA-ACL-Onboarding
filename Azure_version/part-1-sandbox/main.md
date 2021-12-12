@@ -15,16 +15,19 @@
 
 ## Learning Path <!-- omit in toc -->
 
-* Azure Portal
-* [Accounts](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/get-started-with-azure-accounts), [create your own account](https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/) and [associate it with AWK-Tenant](TODO)
-* [Subscriptions](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/overview?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.az-900-describe-cloud-concepts)
-* [Azure regions](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/regions-availability-zones)
-* Resource groups
-* [Create storage account](https://docs.microsoft.com/en-us/learn/modules/create-azure-storage-account/5-exercise-create-a-storage-account)
-* Create Virtual Machine (Choose one)
-  * [Create Windows virtual machine](https://docs.microsoft.com/en-us/learn/modules/create-windows-virtual-machine-in-azure/)
-  * or [Create Linux virtual machine](https://docs.microsoft.com/en-us/learn/modules/create-linux-virtual-machine-in-azure/)
-* Kostenabrechung (Pay-as-you-go) --> Example
+- [Enter the Azure universe](#enter-the-azure-universe)
+  - [Create your own Azure account and associate it with AWK](#create-your-own-azure-account-and-associate-it-with-awk)
+  - [First steps with Azure Portal](#first-steps-with-azure-portal)
+- [Basic terms & fundamental concepts inside Azure](#basic-terms--fundamental-concepts-inside-azure)
+  - [Azure Service](#azure-service)
+  - [Resource](#resource)
+  - [Resource Group](#resource-group)
+  - [Subscription](#subscription)
+  - [Azure Region](#azure-region)
+- [Make your first deployments on Azure](#make-your-first-deployments-on-azure)
+  - [Storage account](#storage-account)
+  - [Compute power in Azure](#compute-power-in-azure)
+  - [Cost calculations](#cost-calculations)
 
 ***
 
