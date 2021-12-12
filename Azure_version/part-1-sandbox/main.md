@@ -209,7 +209,7 @@ You pay only for the resources you use, and only for as long as you're using the
 
 This fundamental concept of cloud computing is important to understand the further advanced pricing models.
 
-Often, you have the possibility to choose a **Tree (or Dev) Tier**, when deploying a resource.
+Often, you have the possibility to choose a **Free (or Dev) Tier**, when deploying a resource.
 This can make sense if you want to save money.
 But be aware of the limitations that come with it.
 
