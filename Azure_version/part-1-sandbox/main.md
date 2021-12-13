@@ -1,6 +1,6 @@
 # Part 1: Learning in a sandbox environment <!-- omit in toc -->
 
-> ⏱ Estimated learning time: 1 hour*
+> ⏱ Estimated learning time: 1.5 hours*
 
 ## What will you achieve in this part <!-- omit in toc -->
 
@@ -122,7 +122,6 @@ These resources are anything you create in an Azure subscription like VMs, Azure
 > This could occur, because Azure creates resources automatically that are needed for the creation of another resource.
 > E.g. you cannot create a virtual machine without a virtual network.
 
-
 Each resource has a **resource type** that is often the same as the associated Azure service.
 Each resource also have a **resource name** which can be chosen during the creation.
 For some resource types it has to be unique on a subscription level or Azure wide.
@@ -130,6 +129,16 @@ For some resource types it has to be unique on a subscription level or Azure wid
 > ❗ACL Remark: Inside ACL, we follow a naming concept for resources.
 > It can be found [here]().
 > All resource names should follow a certain pattern *loga-example-purpose*, where the name should start with a 3-4 letter acronym of the resource type followed by the purpose of the resource.
+
+Furthermore, resources can have resource tags. They can be assigned during creation or later on. A tag can be helpful to document additional information of the resource and make it easier to find.
+
+> ❗ACL Remark: Inside ACL, we follow a tagging concept for resources.
+> It can be found [here]().
+> All resource resources must have an *owner* (email of the owner) and an *environment* (*prod* for production, *dev* for development) tag.
+
+You can also put resource locks. This is helpful if you want to minimize the risk that a resource is accidently deleted.
+
+> ❗ACL Remark: Inside ACL, we put resource locks on every resource that serves a productive workload.
 
 ### Resource Group
 
@@ -161,7 +170,7 @@ Azure is made up of datacenters located around the globe.
 When you use a service or create a resource such as a SQL database or virtual machine (VM), you're using physical equipment in one or more of these locations.
 These specific datacenters aren't exposed to users directly.
 Instead, Azure organizes them into regions.
-As you'll see later in this unit, some of these regions offer availability zones, which are different Azure datacenters within that region.
+Some of these regions offer availability zones, which are different Azure datacenters within that region.
 
 A region is a geographical area on the planet that contains at least one but potentially multiple datacenters that are nearby and networked together with a low-latency network.
 Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced.
