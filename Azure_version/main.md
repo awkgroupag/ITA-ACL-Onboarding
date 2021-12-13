@@ -4,13 +4,13 @@ Version: X.X
 
 Stand: 12.12.2021
 
-Main Contact: Lukas Möller (@awk-moeller, lukas.moeller@awk.ch)
+Main Contact: Lukas Möller (lukas.moeller@awk.ch)
 
 ACL-Senior-Team:
 
-* Jesko Mueller (@ , jesko.mueller@awk.ch)
-* Max Schrimpf (@ , max.schrimpf@awk.ch)
-* Paul Montague (@ , paul.montague@awk.ch)
+* Jesko Mueller (jesko.mueller@awk.ch)
+* Max Schrimpf (max.schrimpf@awk.ch)
+* Paul Montague (paul.montague@awk.ch)
 * and Lukas Möller
 
 ## Preamble
@@ -27,6 +27,8 @@ During this course you will extend your technical competences and get hands-on e
 * Automation, Coding
 * APIs & Integrations
 * Cloud platform services like VMs, storage etc (Azure)
+
+> 📑Note: After 1 hour, you will have set up your first virtual machine in the cloud. And after 4 hours, you will start programming your first applications in the cloud.
 
 The course is outlined for a duration ranging from 12 to 20 hours depending on your pre-knowledge and the time you want to invest in doing your pet project.
 The hours can be reported on **1230 - Weiterbildung** for the course work itself and **1304 - Knowledge Development** for doing the pet project.
