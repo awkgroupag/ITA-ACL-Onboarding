@@ -36,6 +36,32 @@ It is expected from you, that you have no fear of a command line interface (CLI)
 
 An understanding of basic cloud concepts is necessary to pursue this course. You have the chance to look into these concepts in part 0.
 
+> 📑Note: If you are familiar with the basic concepts of cloud computing or even have previous experience deploying resources on Azure or have already earned Azure certifications, you might find part 0 & 1 repetitive. You are free to skip this parts and proceed with the next parts. Be sure to come back to this sections if you are unfamiliar the terms used in later sections.
+
+### Note on Structure & 📑Notes
+
+All parts and most of the learning elements within are structured in the following way:
+
+* A short "What you will achieve in this part"
+* The "Learning Path" as an overview of the lections contained
+* Followed by the actual lections
+* A "Finish"-section
+
+You will find different type of notes and remarks throughout this course:
+
+>* ⏱ Estimated learning time: *Should give you a rough estimate of how much time to use for this section. But learning is always individual, so take the time that ist necessary for you.*
+>* 📑Note: *Just an explanatory note with further explanations but it does not contain further learning content.*
+>* 💡Tip: *Tips can make your (coding) life in the future much easier if you follow them.*
+>* ❗ACL Remark: *Those remarks concern ACL standards and common understanding between all ACL members. You can find a list with all collected ACL remarks [here](/TODO.md).*
+
+### Completing this Course
+
+To complete this course you have to work through all parts (0-4).
+During part 2 there will be a few knowledge checks to self-assess yourself.
+After part 3 there will be a 1:1 talk with one of the ACL senior engineers to assess your knowledge.
+During part 4 you will work on a pet project.
+The presentation of it will complete this course.
+
 ## Learning Path
 
 1. [Part 0: Theoretical Basis](part-0-theory/main.md) (Pre-Requisites)

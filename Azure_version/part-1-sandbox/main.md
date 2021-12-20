@@ -14,19 +14,19 @@
 
 ## Learning Path <!-- omit in toc -->
 
-* [Enter the Azure universe](#enter-the-azure-universe)
-  * [Log into your own Azure account and associate it with AWK](#Log-into-your-own-azure-account-and-associate-it-with-awk)
-  * [First steps with Azure Portal](#first-steps-with-azure-portal)
-* [Basic terms & fundamental concepts inside Azure](#basic-terms--fundamental-concepts-inside-azure)
-  * [Azure Service](#azure-service)
-  * [Resource](#resource)
-  * [Resource Group](#resource-group)
-  * [Subscription](#subscription)
-  * [Azure Region](#azure-region)
-* [Make your first deployments on Azure](#make-your-first-deployments-on-azure)
-  * [Storage account](#storage-account)
-  * [Compute power in Azure](#compute-power-in-azure)
-  * [Cost calculations](#cost-calculations)
+- [Enter the Azure universe](#enter-the-azure-universe)
+  - [Log into your own Azure account and associate it with AWK](#log-into-your-own-azure-account-and-associate-it-with-awk)
+  - [First steps with the Azure Portal](#first-steps-with-the-azure-portal)
+- [Basic terms & fundamental concepts inside Azure](#basic-terms--fundamental-concepts-inside-azure)
+  - [Azure Service](#azure-service)
+  - [Resource](#resource)
+  - [Resource Group](#resource-group)
+  - [Subscription](#subscription)
+  - [Azure Region](#azure-region)
+- [Make your first deployments on Azure](#make-your-first-deployments-on-azure)
+  - [Storage account](#storage-account)
+  - [Compute power in Azure](#compute-power-in-azure)
+  - [Cost calculations](#cost-calculations)
 
 ***
 
@@ -117,13 +117,15 @@ Resources are manageable items that are available through Azure. These resources
 Each resource has a **resource type** that is often the same as the associated Azure service. Each resource also have a **resource name** which can be chosen during the creation (*and cannot be changed later!*). \
 For some resource types, the name must be unique on a resource group level, subscription level or globally.
 
-> ❗ ACL Remark: Inside ACL, we follow a naming concept for resources. It can be found [here (❌ TODO)](#TODO). \
+> ❗ACL Remark: Inside ACL, we follow a naming concept for resources.
+> It can be found [here (❌ TODO)](/TODO.md).
 > All resource names should follow a certain pattern *loga-example-purpose*, where the name should start with a 3-4 letter acronym of the resource type followed by the purpose of the resource.
 
 Furthermore, resources can have resource tags. They can be assigned during creation or later on. A tag can be helpful to document additional information of the resource and make it easier to find or run queries on.
 
-> ❗ ACL Remark: Inside ACL, we follow a tagging concept for resources. It can be found [here (❌ TODO)](#TODO). \
-> All resource resources must have an *owner* (email of the owner) and an *environment* (*prod* for production, *dev* for development, *test* for testing purposes) tag.
+> ❗ACL Remark: Inside ACL, we follow a tagging concept for resources.
+> It can be found [here (❌ TODO)](/TODO.md).
+> All resources must have an *owner* (email of the owner) and an *environment* (*prod* for production, *dev* for development) tag.
 
 You can also put resource locks. This is helpful if you want to minimize the risk that a resource is accidentally deleted.
 
@@ -135,8 +137,9 @@ Resource groups are a fundamental element of the Azure platform. A resource grou
 
 Many resources can be moved between resource groups with some services having specific limitations or requirements to move. Before any resource can be provisioned, you need a resource group for it to be placed in. Resource groups can't be nested.
 
-> ❗ ACL Remark: Inside ACL, we follow a naming concept for resource groups. It can be found [here (❌ TODO)](#TODO). \
-> All resource group names should follow a certain pattern *rg-euwe-pr-example-purpose*, where the name should start with *rg* followed by the Azure region (see below), a tag for the environment (*pr*: production, *dev*: development) and the purpose.
+> ❗ACL Remark: Inside ACL, we follow a naming concept for resource groups.
+> It can be found [here (❌ TODO)](/TODO.md).
+> All resource group names should follow a certain pattern *rg-euwe-pr-example-purpose*, where the name should start with *rg* followed by the Azure region (see below), a tag for the environment (pr: production, dev: development) and the purpose.
 
 ### Subscription
 
@@ -157,8 +160,8 @@ When you use a service or create a resource such as a database or virtual machin
 A region is a geographical area on the planet that contains at least one but potentially multiple data centers that are nearby and networked together with a low-latency network.
 Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced.
 
-> 📑 Note: When you deploy a resource in Azure, you'll often need to choose the region where you want your resource deployed. \
-> 📑 Note: Inside ACL we mostly use *West Europe* or *North Europe*.
+> 📑Note: When you deploy a resource in Azure, you'll often need to choose the region where you want your resource deployed. \
+> ❗ACL Remark: Inside ACL we mostly use *West Europe* or *North Europe* as Azure region.
 
 ## Make your first deployments on Azure
 
@@ -203,7 +206,7 @@ Other pricing tiers vary in guaranteed availability, functionality, scalability 
 
 ## Finish <!-- omit in toc -->
 
-You can now become an ACL trainee. To do so follow [these instructions (❌ TODO)](#TODO)
+You can now become an ACL trainee. To do so follow [this instruction (❌ TODO)](trainee.md)
 
 Back to [Part 0: Theoretical Basis](../part-0-theory/main.md)
 

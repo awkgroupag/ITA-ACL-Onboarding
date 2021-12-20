@@ -9,10 +9,11 @@
 
 ## Learning Path <!-- omit in toc -->
 
-* [AWK Cloud Services & Infrastructure Foundation Course](#cloud-services--infrastructure-foundation-course)
-* [AZ-900 Azure Cloud Fundamentals](#az-900-azure-cloud-fundamentals)
+- [AWK Cloud Services & Infrastructure Foundation Course](#awk-cloud-services--infrastructure-foundation-course)
+- [AZ-900 Azure Cloud Fundamentals](#az-900-azure-cloud-fundamentals)
+- [Online Crash Course on Cloud Computing](#online-crash-course-on-cloud-computing)
 
-## Cloud Services & Infrastructure Foundation Course
+## AWK Cloud Services & Infrastructure Foundation Course
 
 > ⏱ Estimated time: 4 hours
 
@@ -27,6 +28,16 @@ Alternatively (or additionally), you can follow the [Azure certification path](h
 Additionally, if you follow the learning path provided by Microsoft and work on the sandboxes available in it, you get a head start for the next part.
 
 It is not necessary to take and pass the certification in order to proceed with this course, but it is recommended. Either way, it is more important that you have understood the concepts and are familiar with the terms most commonly used in Azure.
+
+## Online Crash Course on Cloud Computing
+
+(ACL Lab Week variant)
+
+> ⏱Estimated time: 0.5 hours
+
+As some of you might wanna right-away start with the coding part of this course and do not have the time to prepare for the AZ-900 certification, we want to provide a possibility to proceed after a crash course on cloud computing.
+[Watch this video series](/TODO.md) to get some insights into the basic principles of cloud computing.
+**BUT** be reminded that this is only a merely sufficient fallback solution. We strongly recommend to catch up with one of the other two alternatives later on if you want to continue with cloud computing. This is necessary to be able to put cloud solutions in the correct context and perspective in your future work.
 
 ## Finish <!-- omit in toc -->
 

@@ -11,7 +11,7 @@ Description:
 
 Choose one:
 
-* [Put learning elements here, that should be done by all learners]
+* [No clue what Networking is about?](https://docs.microsoft.com/en-us/learn/modules/network-fundamentals/)
 
 Want to take a deeper dive:
 
