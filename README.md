@@ -1,17 +1,21 @@
 # ITA-ACL-Onboarding
 
 Course documentation for onboarding to AWK Cloud Lab
+
 Main contact: Lukas Möller (@awk-moeller, lukas.moeller@awk.ch)
 
-## Azure version
+## Onboarding - Azure version
 
-Is currently being developed. Should be live in February 2022.
+Start here: [Azure_version](Azure_version/main.md)
+
+Currently in development. Live around February 2022.
+
 Main contact: Lukas Möller (@awk-moeller, lukas.moeller@awk.ch)
 
-## AWS version
+## Onboarding - AWS version
 
-No setup planned right now.
+Currently, no setup planned.
 
-## GCP version
+## Onboarding - GCP version
 
-No setup planned right now.
+Currently, no setup planned.

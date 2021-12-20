@@ -1,15 +1,14 @@
-# [Put service name]
+# [Put service name here]
 
 Description:
-[Put a short description here, how or what for the service/ressource can be used.]
-
-Why is it relevant?
-
+[Write down a short description here, how or what the service / resource achieves.] \
+[Why is it relevant? In which context?]
 
 ## Fact Sheet
 
-[Insert fact sheet of Joel]
---> You are here (Einordnung auf Shichctenmodell)
+[❌ Insert fact sheet based on Joel's proposal]
+
+--> You are here: link to layer model
 
 ## Learning Path
 
@@ -19,8 +18,8 @@ Choose one:
 
 Want to take a deeper dive:
 
-* [Put learning elements here, that are only for the interested/advanced learner]
+* [Put learning elements here, that are only for the interested/advanced learners]
 
-## ACL Projects with use of this ressource
+## ACL Projects that make use of this resource
 
-* [Put projects here, that use this ressource]
+* [Put example projects here, that use this resource]

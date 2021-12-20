@@ -1,41 +1,38 @@
 # ACL Onboarding Course
 
-Version: X.X
+> Version 0.1 | 12.12.2021 \
+> Main Contact: Lukas Möller (lukas.moeller@awk.ch)
 
-Stand: 12.12.2021
-
-Main Contact: Lukas Möller (lukas.moeller@awk.ch)
-
-ACL-Senior-Team:
+ACL Senior Team:
 
 * Jesko Mueller (jesko.mueller@awk.ch)
 * Max Schrimpf (max.schrimpf@awk.ch)
 * Paul Montague (paul.montague@awk.ch)
-* and Lukas Möller
+* Lukas Möller (lukas.moeller@awk.ch)
 
 ## Preamble
 
-The overarching goals are to enable AWK consultants:
+The overarching goals of the onboarding are to enable AWK consultants...
 
 * To participate actively in the AWK Cloud Lab (ACL)
 * To develop new applications on their own and run them in the cloud
 * To get the necessary access rights on the AWK tenant
-* To provide them with basic hands-on Cloud knowledge for easier adaption of customer situations/problems
+* To provide them with basic hands-on Cloud knowledge, so they can manage cloud adoption projects for customers
 
-During this course you will extend your technical competences and get hands-on experience with
+During this course, you will extend your technical competences and get hands-on experience with:
 
 * Automation, Coding
 * APIs & Integrations
-* Cloud platform services like VMs, storage etc (Azure)
+* Cloud platform services like VMs, storage, etc. (Azure)
 
-> 📑Note: After 1 hour, you will have set up your first virtual machine in the cloud. And after 4 hours, you will start programming your first applications in the cloud.
+> 📑 Note: After 1 hour, you will have set up your first virtual machine in the cloud. And after 4 hours, you will start programming your first applications in the cloud.
 
-The course is outlined for a duration ranging from 12 to 20 hours depending on your pre-knowledge and the time you want to invest in doing your pet project.
-The hours can be reported on **1230 - Weiterbildung** for the course work itself and **1304 - Knowledge Development** for doing the pet project.
+The course is outlined for a duration ranging from 12 to 20 hours, depending on your previous knowledge and the time you want to invest in doing your pet project.
+The hours can be reported on **1230 - Weiterbildung** for the course work itself and **1304 - Knowledge Development** for working on the pet project.
 
 ### Prerequisites
 
-It is expected from you that you have no fear of a command line interface or reading source code (and copying it) during this course. But it is recommended, that your bring some coding experience. Some exercises are possible without extensive use of source code, but many require a basic understanding of source code.
+It is expected from you, that you have no fear of a command line interface (CLI) or reading source code (and copying it) during this course. But it is recommended, that you bring some coding experience. Some exercises are possible without extensive use of source code, but many require a basic understanding of source code.
 
 An understanding of basic cloud concepts is necessary to pursue this course. You have the chance to look into these concepts in part 0.
 
@@ -45,6 +42,6 @@ An understanding of basic cloud concepts is necessary to pursue this course. You
 2. [Part 1: First steps in Azure](part-1-sandbox/main.md) (Included in AZ-900)
 3. [Level-Up: Become an ACL Trainee](TODO)
 4. [Part 2: Introduction to Use Cases](part-2-use-cases/main.md) (Title TODO)
-5. [Part 3: Get to know ACL application landscape](part-3-awk-applications/main.md)
+5. [Part 3: Get to know the ACL application landscape](part-3-awk-applications/main.md)
 6. [Part 4: Do your own pet project](part-4-pet-project/main.md)
 7. [Level-Up: Become an ACL Junior Engineer](TODO)

@@ -1,21 +1,22 @@
-# Part 3: Get to know ACL application landscape
+# Part 3: Get to know the ACL application landscape
 
-## What will you achieve in this part
+## What you will achieve in this part
 
-* TODO
+* ❌ TODO
 
 ## Learning Path
 
 ### How to read ACL documentation
 
-TODO
+❌ TODO
 
 ### ACL application landscape
 
-Get an overview of the application landscape by having a look in [this document](TODO).
-Choose 1 or 2 applications of your interest and read the documentation carefully.
+Get an overview of the application landscape by having a look in [this document (❌ TODO)](#TODO).
 
-[Link to all documentations](TODO)
+Choose 1 or 2 applications of interest to you and read the documentation carefully.
+
+[🔗 Link to all documentations](TODO)
 
 ## Finish
 
