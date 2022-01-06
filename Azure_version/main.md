@@ -3,7 +3,9 @@
 > Version 0.3 | 06.01.2021 \
 > Main Contact: Lukas Möller (lukas.moeller@awk.ch)
 
-> Warning: The course is work-in-progress and not finished yet. You will find ❌ TODOs throughout the sections.
+> Warning: The course is work-in-progress and not finished yet. You will find ❌ TODOs throughout the sections. You are our first guinea pigs, so please give us some feedback on the course, its strucutre and content.
+
+> 📑 Note: In part 0 you will find special instructions for the LAB Week.
 
 ACL Senior Team:
 

@@ -56,7 +56,7 @@ As some of you might wanna right-away start with trying some cool stuff in the c
 * Either have [a short read](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/what-is-cloud-computing)
 * or [watch this video](https://www.youtube.com/watch?v=M988_fsOSWo) (6min) or [this video](https://www.youtube.com/watch?v=RWgW-CgdIk0) (20min, a little more exhaustive but covering similar topics)
 
-Proceed with the [Power Platform tuorial](../part-2-use-cases/optional/power-platform.md) from here on.
+Proceed with the [Power Platform tutorial](../part-2-use-cases/optional/power-platform.md) from here on.
 
 ## Finish <!-- omit in toc -->
 
