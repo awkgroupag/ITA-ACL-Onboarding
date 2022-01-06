@@ -1,7 +1,9 @@
 # ACL Onboarding Course
 
-> Version 0.1 | 12.12.2021 \
+> Version 0.3 | 06.01.2021 \
 > Main Contact: Lukas Möller (lukas.moeller@awk.ch)
+
+> Warning: The course is work-in-progress and not finished yet. You will find ❌ TODOs throughout the sections.
 
 ACL Senior Team:
 
@@ -52,7 +54,7 @@ You will find different type of notes and remarks throughout this course:
 >* ⏱ Estimated learning time: *Should give you a rough estimate of how much time to use for this section. But learning is always individual, so take the time that ist necessary for you.*
 >* 📑Note: *Just an explanatory note with further explanations but it does not contain further learning content.*
 >* 💡Tip: *Tips can make your (coding) life in the future much easier if you follow them.*
->* ❗ACL Remark: *Those remarks concern ACL standards and common understanding between all ACL members. You can find a list with all collected ACL remarks [here](/TODO.md).*
+>* ❗ACL Remark: *Those remarks concern ACL standards and common understanding between all ACL members. You can find a list with all collected ACL remarks [here](part-2-use-cases/mandatory/ACLremarks.md).*
 
 ### Completing this Course
 
@@ -66,8 +68,8 @@ The presentation of it will complete this course.
 
 1. [Part 0: Theoretical Basis](part-0-theory/main.md) (Pre-Requisites)
 2. [Part 1: First steps in Azure](part-1-sandbox/main.md) (Included in AZ-900)
-3. [Level-Up: Become an ACL Trainee](TODO)
+3. [Level-Up: Become an ACL Trainee](part-1-sandbox/trainee.md)
 4. [Part 2: Introduction to Use Cases](part-2-use-cases/main.md) (Title TODO)
 5. [Part 3: Get to know the ACL application landscape](part-3-awk-applications/main.md)
 6. [Part 4: Do your own pet project](part-4-pet-project/main.md)
-7. [Level-Up: Become an ACL Junior Engineer](TODO)
+7. [Level-Up: Become an ACL Junior Engineer](part-4-pet-project/engineer.md)

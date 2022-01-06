@@ -15,13 +15,13 @@ Independent of your choice, your first step, as a cloud developer, should be to 
 * one view that shows the services that are used and how they are linked to each other
 * one view that shows the data flows and stores (inputs / outputs / DBs)
 
-As soon as you have this architectural overview, talk to an ACL senior engineer. He / she could give you some ideas that will make your life a lot easier!
+As soon as you have this architectural overview, talk to an ACL senior engineer. He / she could give you ssome ideas that will make your life a lot easier!
 
 Now you're ready to roll! Let the **>_** begin.
 
 ## Finish
 
-You successfully finished this course. You can now become an ACL junior engineer 🎉. To do so follow [thiese instructions (❌ TODO)](#TODO)
+You successfully finished this course. You can now become an ACL junior engineer 🎉. To do so follow [these instructions](engineer.md).
 
 Back to [Part 3: Get to know ACL application landscape](../part-3-awk-applications/main.md)
 

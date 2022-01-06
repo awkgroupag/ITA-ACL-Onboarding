@@ -1,11 +1,15 @@
 # Azure Webapp
 
 Description:
-For deployment of Websites
+Azure Webapps can be used to create and deploy scalable web applications. They run on container or App service plans that replace the web server.
 
 ## Fact Sheet
 
-[Insert fact sheet of Joel]
+<img src="../figures/webapp.png" alt="drawing" width="800"/>
+
+You are at this layer of cloud computing:
+
+<img src="../figures/level_runtime.png" alt="drawing" width="250"/>
 
 ## Learning Path
 
@@ -23,3 +27,7 @@ Want to take a deeper dive:
 
 * Wheel of Knowledge (frontend)
 * Museum app (frontend)
+
+Back to [Part 2](../main.md)
+
+Back to [overview page](../../main.md)

@@ -29,14 +29,14 @@ Do you have experience in modern version control for code? Do you know what git 
 
 ### Setup development environment
 
-As with every other coding projects, you may have already done, you first need to setup your development environment. 
+As with every other coding projects, you may have already done, you first need to setup your development environment.
 We recommend you to setup at least:
 
 * A version control linked to our GitHub enterprise
 * Access to your Azure Account
 * An IDE (Integrated development environment) for handling deep code
 
-We recommend that you choose Visual Studio Code (vscode) as it's the ACL default and we can provide support if needed.
+We recommend that you choose Visual Studio Code (vscode, VSC) as it's the ACL default and we can provide support if needed.
 You can use different platforms to setup your development environment:
 
 * locally on you AWK Laptop
@@ -67,16 +67,18 @@ You can choose the option that you prefer. In any case you need to do the follow
 > 💡Tip: Change your language to "English" and regional format to "English (United States)".
 > This way error notes and looking for help in the internet is much easier.
 
-Congrats you development environment is now set up, so that we can start with the more fun part 😉
+Congrats your development environment is now set up, so that we can start with the more fun part 😉
 
 ## Mandatory Services
 
 We find the following services either important in a general cloud computing context or essential to contribute in the ACL.
 Have a look into all of these topics:
 
+* [Azure Logic Apps](mandatory/logic-apps.md)
 * [Azure Functions](mandatory/azure-function.md)
-* [Networking (Virtual Networks)](mandatory/networking.md)
-* [TODO ❌ TODO](/TODO.md)
+* [Networking (Virtual Networks) ⚠ Not ready](mandatory/networking.md)
+* [Azure Key Vault ❌ TODO](/TODO.md)
+* [Container hosting options ❌ TODO](mandatory/container.md)
 
 ## Optional Services
 
@@ -85,11 +87,15 @@ The following list represents services and topics that might be of situational r
 Choose 1-3 of the topics that interests you the most:
 
 * [Azure Web App](optional/web-app.md) (Advanced)
-* [Azure Tenant Governance](optional/tenant-governance.md) (Expert)
-* [Azure Database options](optional/databases.md) (Advanced)
-* (to challenge) [Azure Security Baselines](optional/security-baselines.md) (Expert)
-* (to challenge) [Machine Learning with Azure](optional/machine-learning.md) (Advanced)
-* [TODO ❌ TODO](/TODO.md)
+* [Azure Tenant Governance ⚠ Not ready](optional/tenant-governance.md) (Expert)
+* [Azure Database options ⚠ Not ready](optional/databases.md) (Advanced)
+* [Kubernetes❌ TODO](/TODO.md) (Advanced)
+* [Advanced Policies ❌ TODO](/TODO.md) (Medium)
+* [Advanced Alerts ❌ TODO](/TODO.md) (Medium)
+* [Advanced Storage ❌ TODO](/TODO.md) (Medium)
+* [Power Platform Tutorial](optional/power-platform.md) (Beginner)
+* (to challenge) [Azure Security Baselines ⚠ Not ready](optional/security-baselines.md) (Expert)
+* (to challenge) [Machine Learning with Azure ⚠ Not ready](optional/machine-learning.md) (Advanced)
 
 We tried to give a complexity rating and an estimate of the time needed.
 Of course you can also have a look into all of those topics.
