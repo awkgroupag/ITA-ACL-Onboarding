@@ -29,7 +29,7 @@ Want to take a deeper dive:
 ## ACL Projects that make use of this resource
 
 * [Put example projects here, that use this resource]
-
+* 
 Back to [Part 2](../main.md)
 
 Back to [overview page](../../main.md)

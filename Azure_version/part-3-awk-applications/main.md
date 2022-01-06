@@ -1,5 +1,7 @@
 # Part 3: Get to know the ACL application landscape
 
+Proceed directly with [Part 4: Do your own pet project](../part-4-pet-project/main.md) because we do not have enough documentations ready to fill this chapter.
+
 ## What you will achieve in this part
 
 * ❌ TODO

@@ -161,6 +161,7 @@ A region is a geographical area on the planet that contains at least one but pot
 Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced.
 
 > 📑Note: When you deploy a resource in Azure, you'll often need to choose the region where you want your resource deployed. \
+>
 > ❗ACL Remark: Inside ACL we mostly use *West Europe* or *North Europe* as Azure region.
 
 ## Make your first deployments on Azure
@@ -193,7 +194,7 @@ Until now, we haven't talked about costs and billing of the services you receive
 
 Azure resources are available on-demand and can typically be made available in minutes or even seconds. You pay only for the resources you use, and only for as long as you're using them (normally a fixed price per hour, per GB, per request or per computation cycle).
 
-> E.g. You can save money by turning down / off your VM over night, when you do not use it or by deleting files / data in a storage account you do not need anymore.
+> 📑 Note: E.g. You can save money by turning down / off your VM over night, when you do not use it or by deleting files / data in a storage account you do not need anymore.
 
 This fundamental concept of cloud computing is important to understand the further advanced pricing models.
 
@@ -206,7 +207,7 @@ Other pricing tiers vary in guaranteed availability, functionality, scalability 
 
 ## Finish <!-- omit in toc -->
 
-You can now become an ACL trainee. To do so follow [this instruction (❌ TODO)](trainee.md)
+You can now become an ACL trainee. To do so follow [this instruction](trainee.md)
 
 Back to [Part 0: Theoretical Basis](../part-0-theory/main.md)
 
