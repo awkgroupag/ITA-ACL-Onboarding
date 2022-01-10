@@ -99,11 +99,11 @@ which shows
 Next, we install the chart into our AKS cluster, which results in a release of an Ingress Controller in our cluster.
 Enter 
 ```
-    helm install my-nginx-ingress ingress-nginx/ingress-nginx \
-    --namespace nginx-ingress --create-namespace \
-    --set controller.replicaCount=2 \
-    --set controller.nodeSelector."kubernetes\.io/os"=linux \
-    --set controller.admissionWebhooks.patch.nodeSelector."kubernetes\.io/os"=linux \
+    helm install my-nginx-ingress ingress-nginx/ingress-nginx 
+    --namespace nginx-ingress --create-namespace 
+    --set controller.replicaCount=2 
+    --set controller.nodeSelector."kubernetes\.io/os"=linux 
+    --set controller.admissionWebhooks.patch.nodeSelector."kubernetes\.io/os"=linux 
     --set defaultBackend.nodeSelector."kubernetes\.io/os"=linux
 ```
 where ```my-nginx-ingress``` is the release name of the controller. When I installed it with this command, this is what i got in return:
