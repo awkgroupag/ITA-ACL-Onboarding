@@ -89,7 +89,7 @@ Choose 1-3 of the topics that interests you the most:
 * [Azure Web App](optional/web-app.md) (Advanced)
 * [Azure Tenant Governance ⚠ Not ready](optional/tenant-governance.md) (Expert)
 * [Azure Database options ⚠ Not ready](optional/databases.md) (Advanced)
-* [Kubernetes❌ TODO](/TODO.md) (Advanced)
+* [Kubernetes ⚠ Not ready](optional/kubernetes/README.md) (Advanced)
 * [Advanced Policies ❌ TODO](/TODO.md) (Medium)
 * [Advanced Alerts ❌ TODO](/TODO.md) (Medium)
 * [Advanced Storage ❌ TODO](/TODO.md) (Medium)

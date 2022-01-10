@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - azure-vote-front
+    - aks-testcluster.westeurope.cloudapp.azure.com
     secretName: ingress-nginx
   rules:
-  - host: azure-vote-front
+  - host: aks-testcluster.westeurope.cloudapp.azure.com
     http:
       paths:
       - path: /vote(/|$)(.*)
