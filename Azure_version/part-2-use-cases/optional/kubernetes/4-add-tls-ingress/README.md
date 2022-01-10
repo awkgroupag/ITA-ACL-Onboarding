@@ -25,7 +25,7 @@ alternatively, do all this by CLI. get the ID of your public IP address (in our 
 ```
     az network public-ip list --query "[?ipAddress!=null]|[?contains(ipAddress, '20.82.67.215')].[id]" --output tsv
 ```
-gives you the ID of the public IP address objekt which we need to alter.
+gives you the ID of the public IP address object which we need to alter.
 ```
     az network public-ip update --ids /subscriptions/35d6c10f-be8b-4d64-8771-7c4d9be0e318/resourceGroups/mc_rg-euwe-dev-labweek22-darkclouds_aks-testcluster_westeurope/providers/Microsoft.Network/publicIPAddresses/kubernetes-a25f71f443a0e41e588e8417e65b0719 --dns-name aks-testcluster
 ```
@@ -46,7 +46,7 @@ After this step, our appliction is now reachable at our DNS name, not only by IP
 ![configure public IP address with DNS name](test-application-with-dns.png)
 
 
-### Create own certificate, store as a secret into AKS
+### Create own certificate, store it as a secret into AKS
 Creating our own certificate can be done easily. Open a shell and issue the following command
 ```
     openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
@@ -61,6 +61,9 @@ This results in a RSA public and private key in our current directory. Now, thes
     --key ingress-nginx.key \
     --cert ingress-nginx.crt
 ```
+
+TODO: describe in which namespace the secret needs to be created, assuming that ..
+- the ingress controller is in a different namespace thant the application (which makes sense: the ingress controller is available to any application, while the configuration for a given ingress belongs to the application)
 
 ### Configure Ingress Controller to use TLS
 Now we configure the ingress to use the secret. This is done with an ingress controller configuration that looks like this:

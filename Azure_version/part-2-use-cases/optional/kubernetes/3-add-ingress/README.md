@@ -1,4 +1,4 @@
-# Azure Kubernetes - Setup TLS ingress
+# Azure Kubernetes - Install an Ingress Controller
 
 >Documentation on the experiments carried out during the LabWeek 2022 on the AWK Cloud Lab
 
@@ -6,7 +6,7 @@
 
 > go back to [Azure Kubernetes](../README.md)
 
-## Install Ingress Controller
+## Install an Ingress Controller
 Before we can start to setup our TLS ingress, we need to install something called "ingress controller". Quoting https://docs.microsoft.com/en-us/azure/aks/ingress-basic, this is 
 ```
     ".. a piece of software that provides reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services."
@@ -117,8 +117,7 @@ The ingress controller configuration looks like this:
 ```
 Important points to note in the configuration file:
 - the Service ```azure-vote-front``` is now configured to be of type ```ClusterIP```, which means it has no longer an external IP address provided by the former type ```LoadBalancer```
-- we add an Ingress resource that directs traffic from the ingress controller to our application, either when using our new ```<app-path>```
-```/vote```
+- we add an Ingress resource that directs traffic from the ingress controller to our application, either when using our new ```<app-path>``` ```/vote``` but also if we use no path at all
 
 Apply this configuration:
 ```

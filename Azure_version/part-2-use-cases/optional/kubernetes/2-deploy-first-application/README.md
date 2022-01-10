@@ -22,7 +22,7 @@ resulting in
     deployment.apps/azure-vote-front created
     service/azure-vote-front created
 ```
-When you know execute
+When you now execute
 ```
     kubectl get pods
 ```
