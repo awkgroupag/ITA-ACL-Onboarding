@@ -133,6 +133,8 @@ To remedy this situation, we really need to have a certificate issued by an PKI 
 
 In order that the certificates are issued by a well-known PKI, and that they remain valid, they need to be taken care of and renewed before they expire. To achieve this, we will use [cert-manager](https://github.com/jetstack/cert-manager)  and certificates issued by Let's Encrypt!. However, you could set all this up using another PKI then Let's Encrypt. The steps to be taken are similar, the configuration might differ in some parts. For more information on the different issuer types, head over to https://cert-manager.io/docs/configuration/.
 
+The steps coming up are mostly based on https://cert-manager.io/docs/tutorials/acme/ingress/. 
+
 First, tell helm in which repository cert-manager is available .. you did install helm as described in [Install an Ingress Controller - the longer way](../3-add-ingress/README.md#longer-way), did'nt you? If so, use
 ```
   helm repo add jetstack https://charts.jetstack.io
