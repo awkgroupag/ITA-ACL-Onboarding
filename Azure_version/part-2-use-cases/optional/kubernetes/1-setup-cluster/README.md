@@ -7,7 +7,7 @@
 > go back to [Azure Kubernetes](../README.md)
 
 ## Setup of the AKS cluster
->❗In the Azure portal, make sure you have a subscription that has enought permission to setup an AKS cluster. Learning sandboxes might not. ;-)
+>❗In the Azure portal, make sure you have a subscription that has enough permission to setup an AKS cluster. Learning sandboxes might not. ;-)
 
 ### Setting up the AKS cluster with the Azure portal
 - Go to Azure portal

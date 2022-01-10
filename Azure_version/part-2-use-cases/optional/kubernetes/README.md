@@ -30,7 +30,7 @@ In order to access Azure and the AKS cluster from the command line, you might wa
 - that's it, your are ready to use the *Azure CLI*.
 
 ## Setup of the AKS cluster {#setup-aks-cluster}
->❗In the Azure portal, make sure you have a subscription that has enought permission to setup an AKS cluster. Learning sandboxes might not. ;-)
+>❗In the Azure portal, make sure you have a subscription that has enough permission to setup an AKS cluster. Learning sandboxes might not. ;-)
 
 Setting up the cluster is described [here](1-setup-cluster/README.md).
 

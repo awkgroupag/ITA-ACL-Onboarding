@@ -56,20 +56,105 @@ OK, all set. Our ingress controller is ready, and it has an **external** IP addr
 ```
     kubectl delete -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.0/deploy/static/provider/cloud/deploy.yaml
 ```
+**Note**: in the last part of this tutorial, you will be using the cert-manager, which best is installed using helm .. think about installing the Ingress Controller with Helm, too.
 
 
 ### The longer way: Install with Helm {#longer-way}
+If you would like to use Helm to install the Ingress Controller, of course you need to have helm. If you already have an installation, just skip the next section.
 
 #### Install Helm
-TODO
+Find information on installing Helm at https://helm.sh/docs/intro/install/. Depending on your OS, you will find the necessary download and installation instructions there. Make sure to put your Helm directory on the search path so that you can use it.
 
-#### Create an Azure Container Registry (ACR)
-TODO
+Once installed, just run it on your command line with
+```
+    helm version
+```
+this shows something similar to
+```
+    version.BuildInfo{Version:"v3.7.2", GitCommit:"663a896f4a815053445eec4153677ddc24a0a361", GitTreeState:"clean", GoVersion:"go1.16.10"}
+```
 
 #### Install Helm chart for Nginx Ingress Controller
-TODO
+To install the ingress controller, we need to tell ```helm``` where to find the chart. This is done by issuing
+```
+    helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx && \
+    helm repo update
+```
+The result in your shell would be
+```
+    "ingress-nginx" has been added to your repositories
+    Hang tight while we grab the latest from your chart repositories...
+    ...Successfully got an update from the "ingress-nginx" chart repository
+    Update Complete. ⎈Happy Helming!⎈
+```
+To see which repositories you have in helm, enter
+```
+    helm repo list
+```
+which shows
+```
+    NAME            URL
+    ingress-nginx   https://kubernetes.github.io/ingress-nginx
+```
+Next, we install the chart into our AKS cluster, which results in a release of an Ingress Controller in our cluster.
+Enter 
+```
+    helm install my-nginx-ingress ingress-nginx/ingress-nginx \
+    --namespace nginx-ingress --create-namespace \
+    --set controller.replicaCount=2 \
+    --set controller.nodeSelector."kubernetes\.io/os"=linux \
+    --set controller.admissionWebhooks.patch.nodeSelector."kubernetes\.io/os"=linux \
+    --set defaultBackend.nodeSelector."kubernetes\.io/os"=linux
+```
+where ```my-nginx-ingress``` is the release name of the controller. When I installed it with this command, this is what i got in return:
+```yaml
+    NAME: my-nginx-ingress
+    LAST DEPLOYED: Mon Jan 10 11:28:38 2022
+    NAMESPACE: nginx-ingress
+    STATUS: deployed
+    REVISION: 1
+    TEST SUITE: None
+    NOTES:
+    The ingress-nginx controller has been installed.
+    It may take a few minutes for the LoadBalancer IP to be available.
+    You can watch the status by running 'kubectl --namespace nginx-ingress get services -o wide -w my-nginx-ingress-ingress-nginx-controller'
 
+    An example Ingress that makes use of the controller:
+    apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+        name: example
+        namespace: foo
+    spec:
+        ingressClassName: nginx
+        rules:
+        - host: www.example.com
+            http:
+            paths:
+                - backend:
+                    service:
+                    name: exampleService
+                    port:
+                        number: 80
+                path: /
+        # This section is only required if TLS is to be enabled for the Ingress
+        tls:
+        - hosts:
+            - www.example.com
+            secretName: example-tls
 
+    If TLS is enabled for the Ingress, a Secret containing the certificate and key must also be provided:
+
+    apiVersion: v1
+    kind: Secret
+    metadata:
+        name: example-tls
+        namespace: foo
+    data:
+        tls.crt: <base64 encoded cert>
+        tls.key: <base64 encoded key>
+    type: kubernetes.io/tls  
+```
 
 ## Configure Ingress controller {#configure-ingress-controller}
 As a first step, we use the ingress controller, but do not add specific configuration for ```https://```.
