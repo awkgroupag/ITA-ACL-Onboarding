@@ -55,7 +55,10 @@ Either way, after this step, our appliction is now reachable at our DNS name, no
 
 
 ### Create own certificate, store it as a secret into AKS
-Creating our own certificate can be done easily. Open a shell and issue the following command
+Creating our own certificate can be done easily with openssl.
+It can be downloaded from https://slproweb.com/products/Win32OpenSSL.html or build from https://www.openssl.org/source/. Dont forget to set the PATH variable!
+
+Open a shell and issue the following command
 ```
     openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -out ingress-nginx.crt \
