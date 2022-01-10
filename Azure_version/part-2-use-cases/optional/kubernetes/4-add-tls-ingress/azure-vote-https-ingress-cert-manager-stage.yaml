@@ -7,11 +7,12 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /$1
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
 spec:
   tls:
   - hosts:
     - aks-testcluster.westeurope.cloudapp.azure.com
-    secretName: azure-vote-front-ingress-nginx
+    secretName: azure-vote-front-ingress-nginx-cert-manager
   rules:
   - host: aks-testcluster.westeurope.cloudapp.azure.com
     http:
