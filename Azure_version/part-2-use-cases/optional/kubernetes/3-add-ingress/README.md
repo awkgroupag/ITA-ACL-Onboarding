@@ -159,7 +159,7 @@ where ```my-nginx-ingress``` is the release name of the controller. When I insta
 ## Configure Ingress controller {#configure-ingress-controller}
 As a first step, we use the ingress controller, but do not add specific configuration for ```https://```.
 
-The ingress controller configuration looks like this:
+The [ingress controller configuration](./azure-vote-http-ingress.yaml) looks like this:
 ```yaml
     apiVersion: v1
     kind: Service

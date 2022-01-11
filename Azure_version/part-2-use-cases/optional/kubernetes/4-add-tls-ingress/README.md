@@ -76,7 +76,7 @@ This results in a RSA public and private key in our current directory. Now, thes
 
 
 ### Configure Ingress Controller to use TLS
-Now we configure the ingress to use the secret. This is done with an ingress controller configuration that looks like this:
+Now we configure the ingress to use the secret. This is done with a [TLS ingress controller configuration](./azure-vote-https-ingress.yaml) that looks like this:
 ```yaml
   apiVersion: networking.k8s.io/v1
   kind: Ingress
@@ -159,7 +159,7 @@ Now that cert-manager is installed, we need to configure either a ClusterIssuer 
 ### Configure ClusterIssuer
 As the rate limiting on Let's Encrpyt production is not accepting a lot of errors, we create a staging ClusterIssuer first to see if our setup is correct. Once we are sure it works, we can change the ClusterIssuer to the production of Let's Encrpyt.
 
-The YAML for the staging cluster issuer looks like this:
+The YAML for the [staging cluster issuer](./staging-cluster-issuer.yaml) looks like this:
 ```yaml
   apiVersion: cert-manager.io/v1
   kind: ClusterIssuer
@@ -190,13 +190,52 @@ To see your cluster issuer configuration
 ```
   kubectl describe clusterissuer letsencrypt-staging
 ```
+Once the issuer is ready, also create the [cluster issuer for the production environment](./production-cluster-issuer.yaml) at Let's Encrypt:
+```
+  kubectl create --edit -f production-cluster-issuer.yaml
+```
 
 ### Configure TLS on application ingress
-With all this in place, we are now ready to change our ingress to use a certificate issued by Let's Encrypt.
+With all this in place, we are now ready to change our ingress to use a certificate issued by Let's Encrypt ([azure-vote-https-ingress-cert-manager-stage.yaml](./azure-vote-https-ingress-cert-manager-stage.yaml)):
 ```yaml
-  kubectl apply -f azure-vote-https-ingress-cert-manager.yaml
+  apiVersion: networking.k8s.io/v1
+  kind: Ingress
+  metadata:
+    name: azure-vote-front-ingress
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/ssl-redirect: "true"
+      nginx.ingress.kubernetes.io/use-regex: "true"
+      nginx.ingress.kubernetes.io/rewrite-target: /$1
+      cert-manager.io/cluster-issuer: "letsencrypt-staging"
+  spec:
+    tls:
+    - hosts:
+      - aks-testcluster.westeurope.cloudapp.azure.com
+      secretName: azure-vote-front-ingress-nginx-cert-manager
+    rules:
+    - host: aks-testcluster.westeurope.cloudapp.azure.com
+      http:
+        paths:
+        - path: /vote(/|$)(.*)
+          pathType: Prefix
+          backend:
+            service:
+              name: azure-vote-front
+              port:
+                number: 80
+        - path: /(.*)
+          pathType: Prefix
+          backend:
+            service:
+              name: azure-vote-front
+              port:
+                number: 80
 ```
-Apply it
+Note that
+- we are now using the secret ```azure-vote-front-ingress-nginx-cert-manager``` which is created by the cert-manager
+
+Apply this ingress configuration
 ```
   kubectl apply -f azure-vote-https-ingress-cert-manager-stage.yaml
 ```
@@ -208,11 +247,15 @@ and check the certificate is ready with
   NAME                                          READY   SECRET                                        AGE
   azure-vote-front-ingress-nginx-cert-manager   True    azure-vote-front-ingress-nginx-cert-manager   10m
 ```
-If the result shows **true** for the READY-state, then we can start to use it (you can sneek a peak on the test below, but be assured the staging issuer does not issue trusted certificates). Therefore, we now change the Ingress configuration to use the production issuer.
+If the result shows **true** for the READY-state, then we can start to use it (you can sneek a peak on the test below, but be assured the staging issuer does not issue trusted certificates). Therefore, we now change the [Ingress configuration to use the production issuer](./azure-vote-https-ingress-cert-manager-prod.yaml).
 ```
   kubectl apply -f azure-vote-https-ingress-cert-manager-prod.yaml
 ```
-Once again, check if the certificate is ready, and if so .. proceed to test it.
+The only difference between the old (staging) and new (production) configuration is the ```cluster-issuer``` used
+```yaml
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+```
+Once again, check if the (new production) certificate is ready, and if so .. proceed to test it.
 
 ### Test our app with Ingress Controller and ```https://```
 Now, open your browser at [https://aks-testcluster-westeurope.cloadapp.azure.com/vote](https://aks-testcluster-westeurope.cloadapp.azure.com/vote) and you reach our application using the TLS enabled ingress controller - this time using ```https://```!
@@ -221,11 +264,5 @@ Now, open your browser at [https://aks-testcluster-westeurope.cloadapp.azure.com
 
 As you can see, the Ingress Controller provides his service now with a certificate that is issued by Let's Encrypt R3 and that is trusted by our browser. The certificate will be renewed as necessary by the cert-manager. This is what you expect for a business application!
 
-
-### and now?
-TODO:
-- configure cert-manager to automatically provide a TLS certificate for any ingress controller configured
-
-TODO
 
 Return to the main article [Azure Kubernetes](../README.md#remove-resources) and [remove all the resources from this example](../5-remove-resources/README.md).
