@@ -10,7 +10,7 @@
 Before you call it a day, be sure to remove all the resources created from Azure, as they are incurring costs and need not be there any longer. You can always re-create all the resources by simply creating a new cluster and redeploying the configuration.
 
 ### Remove cert-manager
-First of all, ensure that all resources for cert-manager are delted. Check with
+First of all, ensure that all resources for cert-manager are deleted. Check with
 ```
     kubectl get Issuers,ClusterIssuers,Certificates,CertificateRequests,Orders,Challenges --all-namespaces
 ```
