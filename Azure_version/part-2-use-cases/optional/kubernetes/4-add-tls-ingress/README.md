@@ -138,7 +138,10 @@ In order that the certificates are issued by a well-known PKI, and that they rem
 
 The steps coming up are mostly based on https://cert-manager.io/docs/tutorials/acme/ingress/. 
 
-First, tell helm in which repository cert-manager is available .. you did install helm as described in [Install an Ingress Controller - the longer way](../3-add-ingress/README.md#longer-way), did'nt you? If so, use
+First, tell helm in which repository cert-manager is available .. you did install helm as described in [Install an Ingress Controller - the longer way](../3-add-ingress/README.md#longer-way), didn't you? 
+If you did not (and therefore do **not** use ```helm```), then go ahead with the instructions at https://cert-manager.io/docs/installation/#default-static-install to install cert-manager with a simple deployment.
+
+If you installed ```helm```, use
 ```
   helm repo add jetstack https://charts.jetstack.io
   helm repo update
@@ -151,8 +154,6 @@ Then, install the cert-manager into the AKS cluster
   --create-namespace \
   --set installCRDs=true
 ```
-
-If you do not like to use ```helm```, then go ahead with the instructions at https://cert-manager.io/docs/installation/#default-static-install to install cert-manager with a simple deployment.
 
 Now that cert-manager is installed, we need to configure either a ClusterIssuer or an Issuer. They are more or less the same functionality, but either for the **cluster** or only inside its **own namespace**. For the sake of simplicity, we use a ClusterIssuer in this example. The configuration is very similar.
 
