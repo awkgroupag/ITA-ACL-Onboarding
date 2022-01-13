@@ -44,7 +44,7 @@ Now we [add an ingress controller](3-add-ingress/README.md).
 Now we [setup TLS for our ingress controller](4-add-tls-ingress/README.md).
 
 ## Remove resources from Azure {#remove-resources}
-Once you are fed up with voting, remove all the resources built up in this course from Azure. Open [remove resources](4-remove-resources/README.md) to see how this is done.
+Once you are fed up with voting, remove all the resources built up in this course from Azure. Open [remove resources](5-remove-resources/README.md) to see how this is done.
 
 
 
