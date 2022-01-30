@@ -1,3 +1,3 @@
 # Dev Setup
 
-Information on how to set up your machine for development can be found [here](dev-setup.md)
+There are several ways to setup your dev environment. You'll find the *known / documented* methods [here](dev-setup.md).

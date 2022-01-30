@@ -6,7 +6,11 @@ Main contact: Lukas Möller (@awk-moeller, lukas.moeller@awk.ch)
 
 ## General topics
 
-Start here: [General topics](General_topics/main.md)
+Start here: [General_topics](General_topics/main.md)
+
+Currently in development. Feel free to add on.
+
+Main contact: Jesko Mueller (@pronex, jesko.mueller@awk.ch)
 
 ## Onboarding - Azure version
 
