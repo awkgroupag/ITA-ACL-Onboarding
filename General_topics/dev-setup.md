@@ -3,13 +3,13 @@
 There are several ways to setup your dev environment. Some elements are necessary, some are optional or have alternatives:
 
 - basics toolset
-  - distributed version control system for source code - [Git](###git)
-  - major provider for Git - [GitHub](###github)
-  - source-code editor / IDE - [VS Code](###VS-code)
-  - Windows Subsystem for Linux - [WSL](###wsl)
+  - distributed version control system for source code - [Git](#git)
+  - major provider for Git - [GitHub](#github)
+  - source-code editor / IDE - [VS Code](#VS-code)
+  - Windows Subsystem for Linux - [WSL](#wsl)
 - dev environment (alternatives)
-  - [containers](###containers)
-  - [VMs](###vms)
+  - [containers](#containers)
+  - [VMs](#vms)
 
 In case you find problems with the resources below, or have hints, fixes, etc. please send us a message, commit or post an issue.
 
@@ -41,7 +41,7 @@ The AWK GitHub, [awkgroupag](https://github.com/awkgroupag) is managed by the DI
 You can use the development environment of your choice. However, we recommend that you use Visual Studio Code (vscode, VSC) as it's the ACL default and we can provide support if needed. You can use different platforms to setup your development environment:
 
 - [VS Code](https://code.visualstudio.com/download) locally on you AWK Laptop
-- remotely on a jump-host Azure VM (see [VMs](###vms) below)
+- remotely on a jump-host Azure VM (see [VMs](#vms) below)
 - online development with [vscode.dev](https://vscode.dev/)
 
 ---
