@@ -88,7 +88,7 @@ Add GPG key:
 
     # ignore if you're on Ubuntu 20.10 or later
     curl -L "https://download.opensuse.org/repositories/devel:/kubic:\
-    libcontainers:/stable/xUbuntu_20.04/Release.key" | sudo apt-key add -
+    /libcontainers:/stable/xUbuntu_20.04/Release.key" | sudo apt-key add -
 
 Update & upgrade packages and install podman:
 
