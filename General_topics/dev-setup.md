@@ -107,6 +107,10 @@ Note: if you get a warning again and again while pulling the images: *WARN[0000]
 
 If you want to manage your containers or Kubernetes with a desktop application, you can use [Rancher Desktop](https://rancherdesktop.io/). This will provide a small scale Kubernetes equivalent on your desktop for development.
 
+### Lab: Install k3s (Lightweight Kubernetes)
+Event though the [Lab: Install k3s cluster on VMs in Azure und AWS](./k3s_Azure_AWS/README.md) uses VMs on Azure and AWS, you can use the instructions in this Lab to install k3s on your local desktop.
+
+
 ### VMs
 
 [Content will come later. Feel free to help!]
