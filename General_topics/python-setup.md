@@ -1,5 +1,9 @@
 # Python Setup
 
+## Installing Python
+
+Python can be found [here](https://www.python.org/downloads/)
+
 ## Extentensions
 
 Install the Python Extension for VS Code: https://marketplace.visualstudio.com/items?itemName=ms-python.python
