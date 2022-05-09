@@ -114,3 +114,7 @@ Event though the [Lab: Install k3s cluster on VMs in Azure und AWS](./k3s_Azure_
 ### VMs
 
 [Content will come later. Feel free to help!]
+
+## Next Steps
+
+If you are planning on using Python, check out our [Python Set-Up Guide](python-setup.md)
