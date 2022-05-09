@@ -73,5 +73,10 @@ You can easily run and debug Python in VSCode using launch configurations. Creat
 ```
 This creates two launch configurations. The first will run the currently open file. The second will run the file `main.py` with the variables in `dev.env` as environment variables. 
 
+## Other tools
 
+Here are some further recommendations for useful Python tools:
+
+- Databases can be managed with [SQLAlchemy](https://www.sqlalchemy.org/), database migrations additionally require the use of [alembic](https://alembic.sqlalchemy.org/en/latest/)
+- Logging can be done with [structlog](https://www.structlog.org/en/stable/getting-started.html)
 
